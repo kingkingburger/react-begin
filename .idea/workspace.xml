@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="fix: All Direct">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1.구구단/like-button-jsx.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/1.구구단/like-button-jsx.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +70,7 @@
       <workItem from="1676894173728" duration="2865000" />
       <workItem from="1676979618338" duration="1039000" />
       <workItem from="1677065572030" duration="1653000" />
+      <workItem from="1677152793499" duration="974000" />
     </task>
     <task id="LOCAL-00001" summary="fix: All Direct">
       <created>1676895210853</created>
