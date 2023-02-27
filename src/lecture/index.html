@@ -18,15 +18,27 @@
     const [value, setValue] = React.useState('');
     const [result, setResult] = React.useState('');
 
+    const onSubmit = (e) =>{
+      e.preventDefault()
+      if(parseInt(value) === first * second){
+        setResult('정답')
+        setFirst(Math.ceil(Math.random() * 9))
+        setSecond(Math.ceil(Math.random() * 9))
+        setValue('')
+      }else{
+        setResult('땡')
+        setValue('')
+      }
+    }
 
     return (
             <div>
               <div>{first}곱하기{second}는?</div>
-              <form>
+              <form onSubmit={onSubmit}>
                 <input type="number" value={value} onChange={(e) => setValue(e.target.value)}/>
                 <button>입력!</button>
               </form>
-              <div>{result}</div>
+              <div>정답 {first} x {second} : {result}</div>
             </div>
     )
   }
