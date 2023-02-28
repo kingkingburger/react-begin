@@ -17,6 +17,7 @@
     const [second, setSecond] = React.useState(Math.ceil(Math.random() * 9));
     const [value, setValue] = React.useState('');
     const [result, setResult] = React.useState('');
+    const [sum, setSum] = React.useState('');
 
     const onSubmit = (e) =>{
       e.preventDefault()
@@ -24,6 +25,7 @@
         setResult('정답')
         setFirst(Math.ceil(Math.random() * 9))
         setSecond(Math.ceil(Math.random() * 9))
+        setSum(first * second)
         setValue('')
       }else{
         setResult('땡')
@@ -32,14 +34,14 @@
     }
 
     return (
-            <div>
+            <React.Fragment>
               <div>{first}곱하기{second}는?</div>
               <form onSubmit={onSubmit}>
                 <input type="number" value={value} onChange={(e) => setValue(e.target.value)}/>
                 <button>입력!</button>
               </form>
-              <div>정답 {first} x {second} : {result}</div>
-            </div>
+              <div>{sum}정답</div>
+            </React.Fragment>
     )
   }
 </script>
