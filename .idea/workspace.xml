@@ -50,7 +50,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/react_practice&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/champion-selection-helper-server&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -76,6 +76,9 @@
       <workItem from="1677361055805" duration="1131000" />
       <workItem from="1677503781908" duration="1729000" />
       <workItem from="1677589016938" duration="466000" />
+      <workItem from="1677592669570" duration="604000" />
+      <workItem from="1677627476422" duration="528000" />
+      <workItem from="1677732704410" duration="1328000" />
     </task>
     <task id="LOCAL-00001" summary="fix: All Direct">
       <created>1676895210853</created>
