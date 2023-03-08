@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="fix: All Direct">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lecture/WordRelay.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture/WordRelay.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lecture/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lecture/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lecture/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lecture/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +16,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -93,7 +91,8 @@
       <workItem from="1677975879736" duration="986000" />
       <workItem from="1678104329258" duration="1831000" />
       <workItem from="1678106359264" duration="23000" />
-      <workItem from="1678189971330" duration="1351000" />
+      <workItem from="1678189971330" duration="1389000" />
+      <workItem from="1678276329316" duration="1639000" />
     </task>
     <task id="LOCAL-00001" summary="fix: All Direct">
       <created>1676895210853</created>
