@@ -6,20 +6,21 @@ const WordRelay = () => {
     const [word, setWord] = useState('원민호')
     const [value, setValue] = useState('')
     const [result, setResult] = useState('')
-    const inputRef = useRef(null)
+    const inputEl = useRef(null)
 
     const onSubmitForm = (e) => {
+        console.dir(e.target)
         e.preventDefault();
-        if (word[word.length - 1] === value[0]) {
+        if (word[word.length - 1] === e.target.children.word.value[0]) {
             setResult("딩동댕");
-            setWord(value);
-            setValue('');
-            inputRef.current.focus();
+            setWord(e.target.children.word.value);
+            // setValue('');
+            e.target.children.word.value = '';
+            inputEl.current.focus();
         } else {
             setResult("땡");
-            setValue("");
-            inputRef.current.focus();
-            this.input.focus();
+            // setValue("");
+            inputEl.current.focus();
         }
     }
 
@@ -33,7 +34,11 @@ const WordRelay = () => {
             <>
                 <div>{word}</div>
                 <form onSubmit={onSubmitForm}>
-                    <input ref={inputRef} value={value} onChange={onChangeInput}/>
+                    <input
+                        defaultValue="하하하"
+                        id='word'
+                        ref={inputEl}
+                    />
                     <button>입력!</button>
                 </form>
                 <div>{result}</div>
