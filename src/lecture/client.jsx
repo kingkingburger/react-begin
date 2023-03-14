@@ -1,6 +1,7 @@
-const React = require('react')
-const ReactDom = require('react-dom/client')
+// const React = require('react')
+import React from 'react'
+// const ReactDom = require('react-dom/client')
+import ReactDom  from 'react-dom/client'
+const NumberBaseball = require('./NumberBaseball')
 
-const WordRelay = require('./WordRelay')
-
-ReactDom.createRoot(document.querySelector('#root')).render(<WordRelay/>);
+ReactDom.createRoot(document.querySelector('#root')).render(<NumberBaseball/>);
