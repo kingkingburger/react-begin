@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="fix: Moving lessons to a new location">
+    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="fix: use map in react">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lecture/NumberBaseball.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture/NumberBaseball.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lecture/client.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture/client.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +106,8 @@
       <workItem from="1678574721505" duration="1140000" />
       <workItem from="1678704522579" duration="1317000" />
       <workItem from="1678796382254" duration="581000" />
-      <workItem from="1678879327608" duration="1265000" />
+      <workItem from="1678879327608" duration="1353000" />
+      <workItem from="1678963241507" duration="1464000" />
     </task>
     <task id="LOCAL-00001" summary="fix: All Direct">
       <created>1676895210853</created>
@@ -165,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678797780959</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix: use map in react">
+      <created>1678880685231</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678880685231</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +198,7 @@
     <MESSAGE value="learn: Replace class syntax with component syntax" />
     <MESSAGE value="learn: uncontrolled input vs controlled input" />
     <MESSAGE value="fix: Moving lessons to a new location" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: Moving lessons to a new location" />
+    <MESSAGE value="fix: use map in react" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: use map in react" />
   </component>
 </project>
