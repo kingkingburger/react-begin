@@ -1,7 +1,7 @@
 // const React = require('React')
 // const {Component} = React
 import React, {Component} from "react";
-
+import Try from "./Try";
 function getNumbers() { // 숫자 4개를 랜덤하게 뽑아주는 함수
 
 }
@@ -15,11 +15,13 @@ class NumberBaseball extends Component {
         tries: [],
     }
 
-    onSubmitForm = () =>{
+    test = [{fruit: '사과', taste: '달다'}]
+
+    onSubmitForm = () => {
 
     }
 
-    onChangeInput = () =>{
+    onChangeInput = () => {
 
     }
 
@@ -32,8 +34,13 @@ class NumberBaseball extends Component {
                 </form>
                 <div>시도: {this.state.tries.length}</div>
                 <ul>
-                    {[{fruit: '사과', taste: '달다'}]
-                        .map((v,i) => (<li key={v.fruit+v.taste}>{v.fruit} - {v.taste}</li>))}
+                    {this.test
+                        .map((v, i) =>{
+                            return (
+                                <Try value={v} index={i}/>
+                            )
+                        }
+                    )}
                 </ul>
             </>
         )
