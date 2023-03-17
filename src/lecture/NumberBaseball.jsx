@@ -7,6 +7,16 @@ function getNumbers() { // 숫자 4개를 랜덤하게 뽑아주는 함수
 }
 
 class NumberBaseball extends Component {
+constructor(props) {
+    super(props);
+    this.state = {
+        result: '',
+        value: '',
+        answer: getNumbers(),
+        tries: [],
+    };
+    this.onChangeInput = this.onChangeInput.bind(this);
+}
 
     state = {
         result: '',
@@ -21,8 +31,9 @@ class NumberBaseball extends Component {
 
     }
 
-    onChangeInput = () => {
 
+    onChangeInput(e)  {
+        console.log(this)
     }
 
     render() {
@@ -37,7 +48,7 @@ class NumberBaseball extends Component {
                     {this.test
                         .map((v, i) =>{
                             return (
-                                <Try value={v} index={i}/>
+                                <Try key={v.fruit + v.taste} value={v} index={i}/>
                             )
                         }
                     )}
