@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: used to use this">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lecture/NumberBaseball.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture/NumberBaseball.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lecture/client.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture/client.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lecture/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lecture/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: create NumberBall logic" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +109,7 @@
       <workItem from="1678963241507" duration="1596000" />
       <workItem from="1679006741035" duration="1070000" />
       <workItem from="1679089073069" duration="697000" />
-      <workItem from="1679173623348" duration="3076000" />
+      <workItem from="1679173623348" duration="3111000" />
     </task>
     <task id="LOCAL-00001" summary="fix: All Direct">
       <created>1676895210853</created>
@@ -201,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679089766818</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="learn: create NumberBall logic">
+      <created>1679176770987</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679176770987</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +232,7 @@
     <MESSAGE value="learn: use deep map in react" />
     <MESSAGE value="learn: use props in react" />
     <MESSAGE value="learn: used to use this" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: used to use this" />
+    <MESSAGE value="learn: create NumberBall logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: create NumberBall logic" />
   </component>
 </project>
