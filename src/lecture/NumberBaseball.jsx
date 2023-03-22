@@ -4,7 +4,7 @@ import React, { Component, createRef, useState } from "react";
 import TryClass from "./TryClass";
 import Try from "./Try";
 
-function getNumbers() {
+const getNumbers = () => {
   // 숫자 4개를 랜덤하게 뽑아주는 함수
   const candidate = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   const array = [];
@@ -13,7 +13,7 @@ function getNumbers() {
     array.push(chosen);
   }
   return array;
-}
+};
 
 const NumberBaseball = () => {
   const [result, setResult] = useState("");
@@ -23,7 +23,6 @@ const NumberBaseball = () => {
 
   const onSubmitForm = (e) => {
     console.log("동작함");
-    const { value, tries, answer } = this.state;
     e.preventDefault();
     if (value === answer.join("")) {
       setResult("홈런!");
@@ -34,7 +33,6 @@ const NumberBaseball = () => {
       setValue("");
       setAnswer(getNumbers());
       setTries([]);
-      this.inputRef.current.focus();
     } else {
       // 답이 틀렸으면
       const answerArray = value.split("").map((v) => parseInt(v));
@@ -47,7 +45,6 @@ const NumberBaseball = () => {
         setValue("");
         setAnswer(getNumbers());
         setTries([]);
-        this.inputRef.current.focus();
       } else {
         for (let i = 0; i < 4; i++) {
           if (answerArray[i] === answer[i]) {
@@ -56,15 +53,14 @@ const NumberBaseball = () => {
             ball += 1;
           }
         }
-        setTries((prevState) => {
-          [
-            ...prevState,
-            { try: value, result: `${strike} 스트라이크, ${ball} 볼입니다` },
-          ];
-        });
+        setTries((t) => [
+          ...t,
+          {
+            try: value,
+            result: `${strike} 스트라이크, ${ball} 볼입니다.`,
+          },
+        ]);
         setValue("");
-
-        this.inputRef.current.focus();
       }
     }
   };
@@ -82,7 +78,7 @@ const NumberBaseball = () => {
       <div>시도: {tries.length}</div>
       <ul>
         {tries.map((v, i) => {
-          return <TryClass key={`${i + 1}차 시도 :`} tryInfo={v} />;
+          return <Try key={`${i + 1}차 시도 :`} tryInfo={v} />;
         })}
       </ul>
     </>

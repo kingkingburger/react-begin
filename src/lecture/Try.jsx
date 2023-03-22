@@ -1,4 +1,4 @@
-import { memo } from "react";
+import React, { memo } from "react";
 
 const Try = memo(({ tryInfo }) => {
   return (
@@ -9,4 +9,5 @@ const Try = memo(({ tryInfo }) => {
   );
 });
 Try.displayName = "Try";
+
 export default Try;
