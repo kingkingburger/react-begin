@@ -1,6 +1,6 @@
 // const React = require('React')
 // const {Component} = React
-import React, { Component, createRef, useState } from "react";
+import React, { Component, createRef, useRef, useState } from "react";
 import TryClass from "./TryClass";
 import Try from "./Try";
 
@@ -20,6 +20,7 @@ const NumberBaseball = () => {
   const [value, setValue] = useState("");
   const [answer, setAnswer] = useState(getNumbers); // lazy init
   const [tries, setTries] = useState([]);
+  const [inputRef, setInputRef] = useRef();
 
   const onSubmitForm = (e) => {
     console.log("동작함");
@@ -33,6 +34,7 @@ const NumberBaseball = () => {
       setValue("");
       setAnswer(getNumbers());
       setTries([]);
+      inputRef.current.forcus();
     } else {
       // 답이 틀렸으면
       const answerArray = value.split("").map((v) => parseInt(v));
@@ -62,6 +64,7 @@ const NumberBaseball = () => {
         ]);
         setValue("");
       }
+      inputRef.current.forcus();
     }
   };
 
@@ -73,7 +76,12 @@ const NumberBaseball = () => {
     <>
       <h1>{result}</h1>
       <form onSubmit={onSubmitForm}>
-        <input maxLength={4} value={value} onChange={onChangeInput} />
+        <input
+          ref={inputRef}
+          maxLength={4}
+          value={value}
+          onChange={onChangeInput}
+        />
       </form>
       <div>시도: {tries.length}</div>
       <ul>

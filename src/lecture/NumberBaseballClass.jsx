@@ -103,6 +103,11 @@ class NumberBaseballClass extends Component {
 
   inputRef = createRef();
 
+  // onInputRef = (c) =>{
+  //   console.log()
+  //   // 다른동작
+  //   this.inputRef = c;
+  // }
   render() {
     const { result, value, tries } = this.state;
     return (
