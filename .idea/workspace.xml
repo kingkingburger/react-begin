@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: How PureComponent, memo works">
+    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn 32: createRef">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lecture/NumberBaseball.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture/NumberBaseball.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lecture/Try.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture/Try.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +118,8 @@
       <workItem from="1679484063806" duration="1278000" />
       <workItem from="1679568950834" duration="648000" />
       <workItem from="1679654382726" duration="1144000" />
-      <workItem from="1679690136491" duration="102000" />
+      <workItem from="1679690136491" duration="424000" />
+      <workItem from="1679780730190" duration="355000" />
     </task>
     <task id="LOCAL-00001" summary="fix: All Direct">
       <created>1676895210853</created>
@@ -246,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679655536651</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="learn 32: createRef">
+      <created>1679690550162</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1679690550162</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +289,7 @@
     <MESSAGE value="learn: change class =&gt; hook" />
     <MESSAGE value="learn: How to Optimize Rendering!" />
     <MESSAGE value="learn: How PureComponent, memo works" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: How PureComponent, memo works" />
+    <MESSAGE value="learn 32: createRef" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn 32: createRef" />
   </component>
 </project>
