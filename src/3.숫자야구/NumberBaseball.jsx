@@ -5,11 +5,12 @@ import TryClass from "./TryClass";
 import Try from "./Try";
 
 const getNumbers = () => {
+  console.log("동작함");
   // 숫자 4개를 랜덤하게 뽑아주는 함수
-  const candidate = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const candidates = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   const array = [];
   for (let i = 0; i < 4; i++) {
-    const chosen = candidate.splice(Math.floor(Math.random() * (9 - i)), 1)[0];
+    const chosen = candidates.splice(Math.floor(Math.random() * (9 - i)), 1)[0];
     array.push(chosen);
   }
   return array;
@@ -18,9 +19,9 @@ const getNumbers = () => {
 const NumberBaseball = () => {
   const [result, setResult] = useState("");
   const [value, setValue] = useState("");
-  const [answer, setAnswer] = useState(getNumbers); // lazy init
+  const [answer, setAnswer] = useState(getNumbers); // lazy init, ()붙히면 함수 바뀔 때 마다 랜더링됨!
   const [tries, setTries] = useState([]);
-  const [inputRef, setInputRef] = useRef();
+  const inputRef = useRef(null);
 
   const onSubmitForm = (e) => {
     console.log("동작함");
@@ -34,7 +35,7 @@ const NumberBaseball = () => {
       setValue("");
       setAnswer(getNumbers());
       setTries([]);
-      inputRef.current.forcus();
+      inputRef.current.focus();
     } else {
       // 답이 틀렸으면
       const answerArray = value.split("").map((v) => parseInt(v));
@@ -64,7 +65,7 @@ const NumberBaseball = () => {
         ]);
         setValue("");
       }
-      inputRef.current.forcus();
+      inputRef.current.focus();
     }
   };
 

@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: Using the ternary operator">
+    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: how to stop setTimeOut in react">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/3.숫자야구/NumberBaseball.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/3.숫자야구/NumberBaseball.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/3.숫자야구/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/3.숫자야구/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lecture/NumberBaseball.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lecture/NumberBaseballClass.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lecture/ResponseCheck.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture/ResponseCheck.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +58,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.12.1&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.15.0&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/react_practice&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/OrderNexus&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -123,7 +127,9 @@
       <workItem from="1679780730190" duration="1746000" />
       <workItem from="1679918092253" duration="9000" />
       <workItem from="1679918102367" duration="1493000" />
-      <workItem from="1680002647691" duration="1654000" />
+      <workItem from="1680002647691" duration="1773000" />
+      <workItem from="1680005602439" duration="618000" />
+      <workItem from="1680092346755" duration="2728000" />
     </task>
     <task id="LOCAL-00001" summary="fix: All Direct">
       <created>1676895210853</created>
@@ -272,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679919603130</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="learn: how to stop setTimeOut in react">
+      <created>1680004436085</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1680004436085</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,6 +325,7 @@
     <MESSAGE value="learn 32: createRef" />
     <MESSAGE value="learn: Risk of passing props from parent to child" />
     <MESSAGE value="learn: Using the ternary operator" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: Using the ternary operator" />
+    <MESSAGE value="learn: how to stop setTimeOut in react" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: how to stop setTimeOut in react" />
   </component>
 </project>
