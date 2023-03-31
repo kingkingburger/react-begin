@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: Fixing ref error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/3.숫자야구/NumberBaseball.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/3.숫자야구/NumberBaseball.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lecture/ResponseCheck.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture/ResponseCheck.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lecture/client.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture/client.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "18.12.1",
     "javascript.nodejs.core.library.typings.version": "18.15.0",
-    "last_opened_file_path": "F:/devportfolio-master",
+    "last_opened_file_path": "F:/react_practice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -128,7 +128,8 @@
       <workItem from="1680005602439" duration="618000" />
       <workItem from="1680092346755" duration="2927000" />
       <workItem from="1680177495783" duration="1549000" />
-      <workItem from="1680182983334" duration="1102000" />
+      <workItem from="1680182983334" duration="2258000" />
+      <workItem from="1680302035139" duration="200000" />
     </task>
     <task id="LOCAL-00001" summary="fix: All Direct">
       <created>1676895210853</created>
@@ -291,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680096153875</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="learn: Fixing ref error">
+      <created>1680184151857</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1680184151857</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
