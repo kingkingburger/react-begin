@@ -59,7 +59,7 @@ class RSPClass extends Component {
     }
   };
 
-  onClickBtn = (choice) => {
+  onClickBtn = (choice) => () => {
     const { imgCoord } = this.state;
     clearInterval(this.interval);
 
@@ -81,36 +81,6 @@ class RSPClass extends Component {
       this.setState((prevState) => {
         return {
           result: "졌습니다.",
-          score: prevState.score - 1,
-        };
-      });
-    }
-    setTimeout(() => {
-      this.interval = setInterval(this.changeHand, 100);
-    }, 1000);
-  };
-
-  onClickBtn = (choice) => () => {
-    const { imgCoord } = this.state;
-    clearInterval(this.interval);
-    const myScore = scores[choice];
-    const cpuScore = scores[computerChoice(imgCoord)];
-    const diff = myScore - cpuScore;
-    if (diff === 0) {
-      this.setState({
-        result: "비겼습니다!",
-      });
-    } else if ([-1, 2].includes(diff)) {
-      this.setState((prevState) => {
-        return {
-          result: "이겼습니다!",
-          score: prevState.score + 1,
-        };
-      });
-    } else {
-      this.setState((prevState) => {
-        return {
-          result: "졌습니다!",
           score: prevState.score - 1,
         };
       });
