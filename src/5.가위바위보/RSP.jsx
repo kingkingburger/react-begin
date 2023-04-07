@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useRef, useState } from "react";
+import React, { Component, memo, useEffect, useRef, useState } from "react";
 
 // 클래스의 경우 -> constructor => render => ref => componentDidMount =>
 // setState/props 바뀔 때, shouldComponentUpdate => render => componentDidUpdate
@@ -21,7 +21,7 @@ const computerChoice = (imgCoord) => {
   return Object.entries(rspCoords).find((v) => v[1] === imgCoord)[0];
 };
 
-const RSP = () => {
+const RSP = memo(() => {
   const [result, setResult] = useState("");
   const [imgCoord, setImgCoord] = useState(rspCoords.바위);
   const [score, setScore] = useState(0);
@@ -89,7 +89,7 @@ const RSP = () => {
       <div>현재 {score}점</div>
     </>
   );
-};
+});
 //
 // class RSPClass extends Component {
 //   state = {
