@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: use setInterval in hooks">
+    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: A useEffect goes through a lifecycle based on its state">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/5.가위바위보/RSP.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/5.가위바위보/RSP.jsx" afterDir="false" />
     </list>
@@ -140,6 +140,8 @@
       <workItem from="1680787946237" duration="21000" />
       <workItem from="1680866672112" duration="1484000" />
       <workItem from="1680906272557" duration="393000" />
+      <workItem from="1680906679595" duration="49000" />
+      <workItem from="1680995982169" duration="1269000" />
     </task>
     <task id="LOCAL-00001" summary="fix: All Direct">
       <created>1676895210853</created>
@@ -351,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680868163096</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="learn: A useEffect goes through a lifecycle based on its state">
+      <created>1680906715771</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1680906715771</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +385,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="learn: create workRelay in class" />
     <MESSAGE value="learn: how to webpack hot reloading" />
     <MESSAGE value="learn: Replace class syntax with component syntax" />
     <MESSAGE value="learn: uncontrolled input vs controlled input" />
@@ -401,6 +409,7 @@
     <MESSAGE value="learn: use setInterval and clearInterval" />
     <MESSAGE value="learn: what is Higher Order Function" />
     <MESSAGE value="learn: use setInterval in hooks" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: use setInterval in hooks" />
+    <MESSAGE value="learn: A useEffect goes through a lifecycle based on its state" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: A useEffect goes through a lifecycle based on its state" />
   </component>
 </project>
