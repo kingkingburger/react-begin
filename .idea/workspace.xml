@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: A useEffect goes through a lifecycle based on its state">
+    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: Creating a custom hook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/5.가위바위보/RSP.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/5.가위바위보/RSP.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lecture/RenderTest.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture/RenderTest.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lecture/client.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture/client.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,33 +47,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.12.1&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.15.0&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/react_practice&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;F:\\react_practice\\src\\lecture\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "18.12.1",
+    "javascript.nodejs.core.library.typings.version": "18.15.0",
+    "last_opened_file_path": "F:/react_practice/src/6.로또",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "F:\\react_practice\\src\\lecture\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\react_practice\src\6.로또" />
       <recent name="F:\react_practice\src\5.가위바위보" />
       <recent name="F:\react_practice\src\4.반응속도체크" />
       <recent name="F:\react_practice\src\lecture" />
       <recent name="F:\react_practice\src\3.숫자야구" />
-      <recent name="F:\react_practice\src\2.끝말잇기" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -141,7 +142,10 @@
       <workItem from="1680866672112" duration="1484000" />
       <workItem from="1680906272557" duration="393000" />
       <workItem from="1680906679595" duration="49000" />
-      <workItem from="1680995982169" duration="1269000" />
+      <workItem from="1680995982169" duration="1290000" />
+      <workItem from="1680998026373" duration="42000" />
+      <workItem from="1681021714851" duration="5241000" />
+      <workItem from="1681127710518" duration="1633000" />
     </task>
     <task id="LOCAL-00001" summary="fix: All Direct">
       <created>1676895210853</created>
@@ -360,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680906715771</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="learn: Creating a custom hook">
+      <created>1680997282831</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1680997282831</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +396,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="learn: how to webpack hot reloading" />
     <MESSAGE value="learn: Replace class syntax with component syntax" />
     <MESSAGE value="learn: uncontrolled input vs controlled input" />
     <MESSAGE value="fix: Moving lessons to a new location" />
@@ -410,6 +420,7 @@
     <MESSAGE value="learn: what is Higher Order Function" />
     <MESSAGE value="learn: use setInterval in hooks" />
     <MESSAGE value="learn: A useEffect goes through a lifecycle based on its state" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: A useEffect goes through a lifecycle based on its state" />
+    <MESSAGE value="learn: Creating a custom hook" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: Creating a custom hook" />
   </component>
 </project>
