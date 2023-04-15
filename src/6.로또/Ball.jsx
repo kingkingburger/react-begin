@@ -1,4 +1,4 @@
-import React, { memo, PureComponent } from "react";
+import React, { memo } from "react";
 
 const Ball = memo(({ number }) => {
   let background;
@@ -13,13 +13,13 @@ const Ball = memo(({ number }) => {
   } else {
     background = "green";
   }
+
   return (
     <div className="ball" style={{ background }}>
       {number}
     </div>
   );
 });
-
 Ball.displayName = "Ball";
 
 export default Ball;

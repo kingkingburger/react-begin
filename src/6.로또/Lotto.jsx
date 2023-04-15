@@ -1,4 +1,11 @@
-import React, { Component, useEffect, useRef, useState } from "react";
+import React, {
+  Component,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import Ball from "./Ball";
 function getWinNumbers() {
   console.log("getWinNumbers");
@@ -17,11 +24,22 @@ function getWinNumbers() {
 }
 
 const Lotto = () => {
-  const [winNumbers, setWinNumbers] = useState(getWinNumbers());
+  const lottoNumbers = useMemo(() => getWinNumbers(), []);
+  const [winNumbers, setWinNumbers] = useState(lottoNumbers, []);
+  // const [winNumbers, setWinNumbers] = useState(getWinNumbers);
   const [winBalls, setWinBalls] = useState([]);
   const [bonus, setBonus] = useState(null);
   const [redo, setRedo] = useState(false);
   const timeouts = useRef([]);
+
+  const mounted = useRef(false);
+  useEffect(() => {
+    if (!mounted.current) {
+      mounted.current = true;
+    } else {
+      //ajax
+    }
+  }, [바뀌는값]); // componentDidUpdate만,componentDidMount 실행안됨
 
   useEffect(() => {
     console.log("useEffect");
@@ -43,13 +61,19 @@ const Lotto = () => {
   }, [timeouts.current]); // deps 자리가 빈 배열이면 componentDidMount와 동일
   // 배열에 요소가 있따면 componentDidMount랑 componentDidUPdate 둘다 수행
 
-  const onClickRedo = () => {
+  // componentDidUpdate에서 실행되는것과 비슷합니다.
+  // componentDidUpdate에서 조건문으로 나눠줘야 할것이 useEffect는 2개를 써야합니다.
+  useEffect(() => {
+    console.log("로또 숫자를 생성합니다.");
+  }, [winNumbers]);
+
+  const onClickRedo = useCallback(() => {
     setWinNumbers(getWinNumbers());
     setWinBalls([]);
     setBonus(null);
     setRedo(false);
     timeouts.current = [];
-  };
+  }, [winNumbers]);
 
   return (
     <>
