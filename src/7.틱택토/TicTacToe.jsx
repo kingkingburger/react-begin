@@ -12,7 +12,10 @@ const initialState = {
 };
 
 // 이안에서 state들이 어떻게 바뀔지를 적어주는 것입니다.
-let SET_WINNER = "SET_WINNER";
+export const SET_WINNER = "SET_WINNER";
+export const CLICK_CELL = "CLICK_CELL";
+export const SET_TURN = "SET_TURN";
+
 const reducer = (state, action) => {
   switch (action.type) {
     case SET_WINNER:
@@ -21,6 +24,21 @@ const reducer = (state, action) => {
         ...state,
         winner: action.winner,
       };
+    case CLICK_CELL: {
+      const tableData = [...state.tableData];
+      tableData[action.row] = [...tableData[action.row]];
+      tableData[action.row][action.cell] = state.turn;
+      return {
+        ...state,
+        tableData,
+      };
+    }
+    case SET_TURN: {
+      return {
+        ...state,
+        turn: state.turn === "o" ? "x" : "o",
+      };
+    }
   }
 };
 
@@ -33,7 +51,11 @@ const TicTacToe = () => {
 
   return (
     <>
-      <Table onClick={onClickTable} tableData={state.tableData} />{" "}
+      <Table
+        onClick={onClickTable}
+        tableData={state.tableData}
+        dispatch={dispatch}
+      />{" "}
       {state.winner && <div>{state.winner}님의 승리</div>}
     </>
   );

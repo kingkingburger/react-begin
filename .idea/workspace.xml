@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: initialize useReducer">
+    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: relationship about reducer, action, dispatch의">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/7.틱택토/Table.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/7.틱택토/Table.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/7.틱택토/Td.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/7.틱택토/Td.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/7.틱택토/TicTacToe.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/7.틱택토/TicTacToe.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/7.틱택토/Tr.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/7.틱택토/Tr.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/7.틱택토/client.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/7.틱택토/client.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +154,8 @@
       <workItem from="1681498722701" duration="1298000" />
       <workItem from="1681602068588" duration="839000" />
       <workItem from="1681732859930" duration="1356000" />
-      <workItem from="1681816423678" duration="1523000" />
+      <workItem from="1681816423678" duration="1572000" />
+      <workItem from="1681902340961" duration="1013000" />
     </task>
     <task id="LOCAL-00001" summary="fix: All Direct">
       <created>1676895210853</created>
@@ -430,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681734512791</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="learn: relationship about reducer, action, dispatch의">
+      <created>1681818012220</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1681818012220</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +462,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="learn: used to use this" />
     <MESSAGE value="learn: create NumberBall logic" />
     <MESSAGE value="learn: child component" />
     <MESSAGE value="learn: change class =&gt; hook" />
@@ -480,6 +486,7 @@
     <MESSAGE value="learn: LottoClass convert to hooks" />
     <MESSAGE value="learn: use only componentDidUpdate in hooks" />
     <MESSAGE value="learn: initialize useReducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: initialize useReducer" />
+    <MESSAGE value="learn: relationship about reducer, action, dispatch의" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: relationship about reducer, action, dispatch의" />
   </component>
 </project>
