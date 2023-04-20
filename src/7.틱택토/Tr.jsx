@@ -8,10 +8,11 @@ const Tr = ({ rowData, rowIndex, dispatch }) => {
         .fill()
         .map((td, i) => (
           <Td
+            key={i}
+            dispatch={dispatch}
+            rowIndex={rowIndex}
             cellIndex={i}
             cellData={rowData[i]}
-            rowIndex={rowIndex}
-            dispatch={dispatch}
           >
             {""}
           </Td>
