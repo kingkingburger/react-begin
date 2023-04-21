@@ -110,7 +110,6 @@ const TicTacToe = () => {
     ) {
       win = true;
     }
-    console.log(win, row, cell, tableData, turn);
     if (win) {
       // 승리시
       dispatch({ type: SET_WINNER, winner: turn });

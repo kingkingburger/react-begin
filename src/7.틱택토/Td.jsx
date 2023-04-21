@@ -1,9 +1,14 @@
-import React, { useCallback } from "react";
+import React, { memo, useCallback, useEffect, useRef } from "react";
 import { CLICK_CELL, SET_TURN } from "./TicTacToe";
 
-const Td = ({ rowIndex, cellIndex, cellData, dispatch }) => {
+const Td = memo(({ rowIndex, cellIndex, cellData, dispatch }) => {
+  const ref = useRef([]);
+
+  useEffect(() => {
+    ref.current = [rowIndex, cellIndex, cellData, dispatch];
+  }, [rowIndex, cellIndex, cellData, dispatch]);
+
   const onClickTd = useCallback(() => {
-    console.log(rowIndex, cellIndex);
     if (cellData) {
       return;
     }
@@ -11,6 +16,6 @@ const Td = ({ rowIndex, cellIndex, cellData, dispatch }) => {
   }, [cellData]);
 
   return <td onClick={onClickTd}>{cellData}</td>;
-};
+});
 Td.displayName = "Td";
 export default Td;

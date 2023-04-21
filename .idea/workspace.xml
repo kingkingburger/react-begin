@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: Shallow copying, the need for contextapi">
+    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: implement TicTacToe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/7.틱택토/Table.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/7.틱택토/Table.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/7.틱택토/Td.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/7.틱택토/Td.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/7.틱택토/TicTacToe.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/7.틱택토/TicTacToe.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/7.틱택토/Tr.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/7.틱택토/Tr.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +54,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.12.1&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.15.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.15.13&quot;,
     &quot;last_opened_file_path&quot;: &quot;F:/OrderNexus&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -157,7 +155,11 @@
       <workItem from="1681816423678" duration="1572000" />
       <workItem from="1681902340961" duration="1078000" />
       <workItem from="1681989961621" duration="587000" />
-      <workItem from="1682025035949" duration="1520000" />
+      <workItem from="1682025035949" duration="1591000" />
+      <workItem from="1682054477926" duration="69000" />
+      <workItem from="1682054836760" duration="279000" />
+      <workItem from="1682055126396" duration="65000" />
+      <workItem from="1682109298337" duration="759000" />
     </task>
     <task id="LOCAL-00001" summary="fix: All Direct">
       <created>1676895210853</created>
@@ -446,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681903413278</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="learn: implement TicTacToe">
+      <created>1682026645685</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1682026645685</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,7 +480,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="learn: child component" />
     <MESSAGE value="learn: change class =&gt; hook" />
     <MESSAGE value="learn: How to Optimize Rendering!" />
     <MESSAGE value="learn: How PureComponent, memo works" />
@@ -496,6 +504,7 @@
     <MESSAGE value="learn: initialize useReducer" />
     <MESSAGE value="learn: relationship about reducer, action, dispatch의" />
     <MESSAGE value="learn: Shallow copying, the need for contextapi" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: Shallow copying, the need for contextapi" />
+    <MESSAGE value="learn: implement TicTacToe" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: implement TicTacToe" />
   </component>
 </project>
