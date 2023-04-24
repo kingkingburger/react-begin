@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: optimization use memo">
-      <change afterPath="$PROJECT_DIR$/src/8.지뢰찾기/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/8.지뢰찾기/Ball.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/8.지뢰찾기/MinSearch.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/8.지뢰찾기/Table.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/8.지뢰찾기/Td.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/8.지뢰찾기/Tr.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/8.지뢰찾기/client.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/8.지뢰찾기/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/8.지뢰찾기/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/8.지뢰찾기/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/8.지뢰찾기/webpack.config.js" afterDir="false" />
+    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: initialize mineSearch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/8.지뢰찾기/Form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.지뢰찾기/Form.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/8.지뢰찾기/MinSearch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.지뢰찾기/MinSearch.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,26 +50,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "18.12.1",
-    "javascript.nodejs.core.library.typings.version": "18.15.13",
-    "last_opened_file_path": "F:/react_practice/src/8.지뢰찾기",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "F:\\react_practice\\src\\lecture\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.12.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.15.13&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/react_practice/src/8.지뢰찾기&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;F:\\react_practice\\src\\lecture\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\react_practice\src\8.지뢰찾기" />
@@ -172,7 +163,8 @@
       <workItem from="1682054836760" duration="279000" />
       <workItem from="1682055126396" duration="65000" />
       <workItem from="1682109298337" duration="1009000" />
-      <workItem from="1682202495189" duration="678000" />
+      <workItem from="1682202495189" duration="748000" />
+      <workItem from="1682335847498" duration="975000" />
     </task>
     <task id="LOCAL-00001" summary="fix: All Direct">
       <created>1676895210853</created>
@@ -475,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682110303533</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="learn: initialize mineSearch">
+      <created>1682203235086</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1682203235086</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,7 +499,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="learn: How to Optimize Rendering!" />
     <MESSAGE value="learn: How PureComponent, memo works" />
     <MESSAGE value="learn 32: createRef" />
     <MESSAGE value="learn: Risk of passing props from parent to child" />
@@ -525,14 +523,14 @@
     <MESSAGE value="learn: Shallow copying, the need for contextapi" />
     <MESSAGE value="learn: implement TicTacToe" />
     <MESSAGE value="learn: optimization use memo" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: optimization use memo" />
+    <MESSAGE value="learn: initialize mineSearch" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: initialize mineSearch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/7.틱택토/Td.jsx</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
