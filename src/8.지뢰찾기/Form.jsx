@@ -1,5 +1,5 @@
-import { useCallback, useContext, useState } from "react";
-import { START_GAME, TableContext } from "./MinSearch";
+import React, { useCallback, useContext, useState } from "react";
+import { START_GAME, TableContext } from "./MineSearch";
 
 const Form = () => {
   const [row, setRow] = useState(10);
@@ -45,7 +45,7 @@ const Form = () => {
         value={mine}
         onChange={onChangeMine}
       />
-      <button onClick={onClickBtn}>시작</button>
+      <button onClick={onChangeBtn}>시작</button>
     </div>
   );
 };

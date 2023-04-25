@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import MinSearch from "./MinSearch";
 
-ReactDOM.createRoot(document.querySelector("#root")).render(<MinSearch />);
+import MineSearch from "./MineSearch";
+
+ReactDOM.createRoot(document.querySelector("#root")).render(<MineSearch />);
