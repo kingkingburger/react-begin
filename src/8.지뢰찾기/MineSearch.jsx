@@ -65,6 +65,7 @@ const plantMine = (row, cell, mine) => {
 };
 
 export const START_GAME = "START_GAME";
+export const OPEN_CELL = "OPEN_CELL";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -75,6 +76,17 @@ const reducer = (state, action) => {
       };
     }
 
+    // 클릭 되었을 때 cell을 열기 위함
+    case OPEN_CELL: {
+      const tableData = [...state.tableData];
+      tableData[action.row] = [...state.tableData[action.row]];
+      tableData[action.row][action.cell] = CODE.OPENED;
+      return {
+        ...state,
+        tableData,
+      };
+    }
+
     default:
       return state;
   }
@@ -82,19 +94,19 @@ const reducer = (state, action) => {
 
 const MineSearch = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const { tableData, halted, timer, result } = state;
 
   const value = useMemo(
-    () => ({ tableData: state.tableData }),
-    [state.tableData]
+    () => ({ tableData, halted, dispatch }),
+    [tableData, halted]
   );
 
   return (
     <TableContext.Provider value={value}>
-      <Table />
       <Form />
-      <div>{state.timer}</div>
       <Table />
-      <div>{state.result}</div>
+      <div>{timer}</div>
+      <div>{result}</div>
     </TableContext.Provider>
   );
 };

@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: use createContext">
-      <change afterPath="$PROJECT_DIR$/src/8.지뢰찾기/MineSearch.jsx" afterDir="false" />
+    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: creating mine logic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/8.지뢰찾기/Form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.지뢰찾기/Form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/8.지뢰찾기/MinSearch.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/8.지뢰찾기/Table.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.지뢰찾기/Table.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/8.지뢰찾기/MineSearch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.지뢰찾기/MineSearch.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/8.지뢰찾기/Td.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.지뢰찾기/Td.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/8.지뢰찾기/Tr.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.지뢰찾기/Tr.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/8.지뢰찾기/client.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.지뢰찾기/client.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/8.지뢰찾기/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.지뢰찾기/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/8.지뢰찾기/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.지뢰찾기/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +165,8 @@
       <workItem from="1682109298337" duration="1009000" />
       <workItem from="1682202495189" duration="748000" />
       <workItem from="1682335847498" duration="2014000" />
-      <workItem from="1682428713759" duration="1490000" />
+      <workItem from="1682428713759" duration="1516000" />
+      <workItem from="1682516471862" duration="1321000" />
     </task>
     <task id="LOCAL-00001" summary="fix: All Direct">
       <created>1676895210853</created>
@@ -489,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682336882483</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="learn: creating mine logic">
+      <created>1682430239734</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1682430239734</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +515,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="learn 32: createRef" />
     <MESSAGE value="learn: Risk of passing props from parent to child" />
     <MESSAGE value="learn: Using the ternary operator" />
     <MESSAGE value="learn: how to stop setTimeOut in react" />
@@ -539,7 +539,8 @@
     <MESSAGE value="learn: optimization use memo" />
     <MESSAGE value="learn: initialize mineSearch" />
     <MESSAGE value="learn: use createContext" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: use createContext" />
+    <MESSAGE value="learn: creating mine logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: creating mine logic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
