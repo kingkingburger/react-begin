@@ -66,6 +66,11 @@ const plantMine = (row, cell, mine) => {
 
 export const START_GAME = "START_GAME";
 export const OPEN_CELL = "OPEN_CELL";
+export const CLICK_CELL = "CLICK_CELL";
+export const FLAG_CELL = "FLAG_CELL";
+export const QUESTION_CELL = "QUESTION_CELL";
+export const CLICK_MINE = "CLICK_MINE";
+export const NORMALIZE_CELL = "NORMALIZE_CELL";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -84,6 +89,34 @@ const reducer = (state, action) => {
       return {
         ...state,
         tableData,
+      };
+    }
+
+    case CLICK_MINE: {
+      return {
+        ...state,
+      };
+    }
+
+    case CLICK_CELL: {
+      return {
+        ...state,
+      };
+    }
+    case FLAG_CELL: {
+      return {
+        ...state,
+      };
+    }
+
+    case QUESTION_CELL: {
+      return {
+        ...state,
+      };
+    }
+    case NORMALIZE_CELL: {
+      return {
+        ...state,
       };
     }
 
