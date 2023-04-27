@@ -21,6 +21,7 @@ export const TableContext = createContext({
     [],
     [],
   ],
+  halted: true,
   dispatch: () => {},
 });
 
@@ -28,6 +29,7 @@ const initialState = {
   tableData: [],
   timer: 0,
   result: "",
+  halted: false,
 };
 
 const plantMine = (row, cell, mine) => {
@@ -78,6 +80,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         tableData: plantMine(action.row, action.cell, action.mine),
+        halted: false,
       };
     }
 
@@ -93,8 +96,13 @@ const reducer = (state, action) => {
     }
 
     case CLICK_MINE: {
+      const tableData = [...state.tableData];
+      tableData[action.row] = [...state.tableData[action.row]];
+      tableData[action.row][action.cell] = CODE.CLICKED_MINE;
       return {
         ...state,
+        tableData,
+        halted: true,
       };
     }
 
@@ -104,19 +112,37 @@ const reducer = (state, action) => {
       };
     }
     case FLAG_CELL: {
+      const tableData = [...state.tableData];
+      if (tableData[action.row][action.cell] === CODE.MINE) {
+        tableData[action.row][action.cell] = CODE.FLAG_MINE;
+      }
+      tableData[action.row][action.cell] = CODE.FLAG;
       return {
         ...state,
+        tableData,
       };
     }
 
     case QUESTION_CELL: {
+      const tableData = [...state.tableData];
+      if (tableData[action.row][action.cell] === CODE.FLAG_MINE) {
+        tableData[action.row][action.cell] = CODE.QUESTION_MINE;
+      }
+      tableData[action.row][action.cell] = CODE.QUESTION;
       return {
         ...state,
+        tableData,
       };
     }
     case NORMALIZE_CELL: {
+      const tableData = [...state.tableData];
+      if (tableData[action.row][action.cell] === CODE.QUESTION) {
+        tableData[action.row][action.cell] = CODE.MINE;
+      }
+      tableData[action.row][action.cell] = CODE.NORMAL;
       return {
         ...state,
+        tableData,
       };
     }
 

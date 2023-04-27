@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: learn cell click event">
+    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: handling right click in browser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/8.지뢰찾기/MineSearch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.지뢰찾기/MineSearch.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/8.지뢰찾기/Td.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.지뢰찾기/Td.jsx" afterDir="false" />
@@ -167,7 +167,8 @@
       <workItem from="1682335847498" duration="2014000" />
       <workItem from="1682428713759" duration="1516000" />
       <workItem from="1682516471862" duration="1429000" />
-      <workItem from="1682593250046" duration="1913000" />
+      <workItem from="1682593250046" duration="1947000" />
+      <workItem from="1682635409697" duration="1483000" />
     </task>
     <task id="LOCAL-00001" summary="fix: All Direct">
       <created>1676895210853</created>
@@ -498,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682517837564</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="learn: handling right click in browser">
+      <created>1682595317274</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1682595317274</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,7 +531,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="learn: Using the ternary operator" />
     <MESSAGE value="learn: how to stop setTimeOut in react" />
     <MESSAGE value="learn: Fixing ref error" />
     <MESSAGE value="learn: How to use for and if inline" />
@@ -548,7 +555,8 @@
     <MESSAGE value="learn: use createContext" />
     <MESSAGE value="learn: creating mine logic" />
     <MESSAGE value="learn: learn cell click event" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: learn cell click event" />
+    <MESSAGE value="learn: handling right click in browser" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: handling right click in browser" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

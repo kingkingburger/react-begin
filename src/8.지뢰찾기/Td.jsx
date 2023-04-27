@@ -55,14 +55,18 @@ const getTdText = (code) => {
     case CODE.QUESTION:
       return "?";
     default:
-      return CODE || "";
+      return code || "";
   }
 };
 
 const Td = memo(({ rowIndex, cellIndex }) => {
-  const { tableData, dispatch } = useContext(TableContext);
+  const { tableData, halted, dispatch } = useContext(TableContext);
 
   const onClickTd = useCallback(() => {
+    // halted가 들어오면 게임이 멈추게
+    if (halted) {
+      return;
+    }
     // 클릭 되었을 때 어떤 cell의 특성을 가졌는지 확인하기 위함
     switch (tableData[rowIndex][cellIndex]) {
       case CODE.OPENED:
@@ -84,6 +88,10 @@ const Td = memo(({ rowIndex, cellIndex }) => {
 
   const onRightClickTd = useCallback((e) => {
     e.preventDefault();
+    // halted가 들어오면 게임이 멈추게
+    if (halted) {
+      return;
+    }
     // 클릭 되었을 때 어떤 cell의 특성을 가졌는지 확인하기 위함
     switch (tableData[rowIndex][cellIndex]) {
       case CODE.NORMAL:
