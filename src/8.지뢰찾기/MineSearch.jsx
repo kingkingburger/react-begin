@@ -1,6 +1,7 @@
 import React, { createContext, useMemo, useReducer } from "react";
 import Table from "./Table";
 import Form from "./Form";
+import { act } from "react-dom/test-utils";
 
 export const CODE = {
   MINE: -7,
@@ -89,6 +90,40 @@ const reducer = (state, action) => {
       const tableData = [...state.tableData];
       tableData[action.row] = [...state.tableData[action.row]];
       tableData[action.row][action.cell] = CODE.OPENED;
+      let around = [];
+      // 내 윗줄이 있다면
+      if (tableData[action.row - 1]) {
+        // 윗줄의 3칸을 넣어줍니다.
+        around = around.concat(
+          tableData[action.row - 1][action.cell - 1],
+          tableData[action.row - 1][action.cell],
+          tableData[action.row - 1][action.cell + 1]
+        );
+      }
+      // 왼쪽칸 오른쪽칸
+      around = around.concat(
+        tableData[action.row - 1][action.cell - 1],
+        tableData[action.row - 1][action.cell],
+        tableData[action.row - 1][action.cell + 1]
+      );
+
+      // 내 아래줄이 있다면
+      if (tableData[action.row + 1]) {
+        // 아래줄의 3칸을 넣어줍니다.
+        around = around.concat(
+          tableData[action.row + 1][action.cell - 1],
+          tableData[action.row + 1][action.cell],
+          tableData[action.row + 1][action.cell + 1]
+        );
+      }
+
+      // 주변 8칸에 있는 지뢰가 있는부분을 샙니다.
+      const count = around.filter((v) =>
+        [CODE.MINE, CODE.FLAG_MINE, CODE.QUESTION_MINE].includes(v)
+      ).length;
+      console.log(count);
+      tableData[action.row][action.cell] = count;
+
       return {
         ...state,
         tableData,
