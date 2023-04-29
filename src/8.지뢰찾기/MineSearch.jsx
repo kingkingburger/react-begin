@@ -87,46 +87,111 @@ const reducer = (state, action) => {
 
     // 클릭 되었을 때 cell을 열기 위함
     case OPEN_CELL: {
+      // 전체 테이블을 얕을 볻사합니다.
       const tableData = [...state.tableData];
-      tableData[action.row] = [...state.tableData[action.row]];
-      tableData[action.row][action.cell] = CODE.OPENED;
-      let around = [];
-      // 내 윗줄이 있다면
-      if (tableData[action.row - 1]) {
-        // 윗줄의 3칸을 넣어줍니다.
-        around = around.concat(
-          tableData[action.row - 1][action.cell - 1],
-          tableData[action.row - 1][action.cell],
-          tableData[action.row - 1][action.cell + 1]
-        );
-      }
-      // 왼쪽칸 오른쪽칸
-      around = around.concat(
-        tableData[action.row - 1][action.cell - 1],
-        tableData[action.row - 1][action.cell],
-        tableData[action.row - 1][action.cell + 1]
-      );
+      tableData.forEach((row, i) => {
+        tableData[i] = [...row];
+      });
+      // 이미 선택된 칸을 제외하기 위함
+      const checked = [];
 
-      // 내 아래줄이 있다면
-      if (tableData[action.row + 1]) {
-        // 아래줄의 3칸을 넣어줍니다.
-        around = around.concat(
-          tableData[action.row + 1][action.cell - 1],
-          tableData[action.row + 1][action.cell],
-          tableData[action.row + 1][action.cell + 1]
-        );
-      }
+      let openedCount = 0;
 
-      // 주변 8칸에 있는 지뢰가 있는부분을 샙니다.
-      const count = around.filter((v) =>
-        [CODE.MINE, CODE.FLAG_MINE, CODE.QUESTION_MINE].includes(v)
-      ).length;
-      console.log(count);
-      tableData[action.row][action.cell] = count;
+      console.log(tableData.length, tableData[0].length);
+
+      const checkAround = (row, cell) => {
+        console.log(row, cell);
+
+        // 상하좌우 없는칸은 안 열기
+        if (
+          row < 0 ||
+          row >= tableData.length ||
+          cell < 0 ||
+          cell >= tableData[0].length
+        )
+          return;
+
+        // 닫힌 칸만 열기
+        if (
+          [
+            CODE.OPENED,
+            CODE.FLAG,
+            CODE.FLAG_MINE,
+            CODE.QUESTION_MINE,
+            CODE.QUESTION,
+          ].includes(tableData[row][cell])
+        ) {
+          return;
+        }
+
+        // 한 번 연칸은 무시하기
+        if (checked.includes(row + "/" + cell)) {
+          return;
+        } else {
+          checked.push(row + "/" + cell);
+        }
+        let around = [tableData[row][cell - 1], tableData[row][cell + 1]];
+        // 내 윗줄이 있다면
+        if (tableData[row - 1]) {
+          // 윗줄의 3칸을 넣어줍니다.
+          around = around.concat([
+            tableData[row - 1][cell - 1],
+            tableData[row - 1][cell],
+            tableData[row - 1][cell + 1],
+          ]);
+        }
+        // 왼쪽칸 오른쪽칸
+        if (tableData[row + 1]) {
+          around = around.concat([
+            tableData[row + 1][cell - 1],
+            tableData[row + 1][cell],
+            tableData[row + 1][cell + 1],
+          ]);
+        }
+        const count = around.filter(function (v) {
+          return [CODE.MINE, CODE.FLAG_MINE, CODE.QUESTION_MINE].includes(v);
+        }).length;
+        if (count === 0) {
+          // 주변 지뢰를 찾습니다.(내가 빈칸이면 주변에들 검사)
+          if (row > -1) {
+            const near = [];
+            // 나보다 위에칸 없에기 위함
+            if (row - 1 > -1) {
+              near.push([row - 1, cell - 1]);
+              near.push([row - 1, cell]);
+              near.push([row - 1, cell + 1]);
+            }
+            near.push([row, cell - 1]);
+            near.push([row, cell + 1]);
+            // 아래칸 없에기 위함
+            if (row + 1 < tableData.length) {
+              near.push([row + 1, cell - 1]);
+              near.push([row + 1, cell]);
+              near.push([row + 1, cell + 1]);
+            }
+            near.forEach((n) => {
+              if (tableData[n[0]][n[1]] !== CODE.OPENED) {
+                checkAround(n[0], n[1]);
+              }
+            });
+          }
+        }
+        if (tableData[row][cell] === CODE.NORMAL) {
+          // 내 칸이 닫힌 칸이면 카운트 증가
+          openedCount += 1;
+        }
+        tableData[row][cell] = count;
+      };
+      checkAround(action.row, action.cell);
+      let halted = false;
+      let result = "";
 
       return {
         ...state,
         tableData,
+        openedCount: state.openedCount + openedCount,
+        halted,
+        result,
       };
     }
 
