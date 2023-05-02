@@ -302,6 +302,7 @@ const MineSearch = () => {
   }, [halted]);
 
   return (
+    // 자식들에게 물려준다
     <TableContext.Provider value={value}>
       <Form />
       <Table />

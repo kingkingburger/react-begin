@@ -1,4 +1,11 @@
-import React, { memo, useCallback, useContext, useEffect, useRef } from "react";
+import React, {
+  memo,
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useRef,
+} from "react";
 import {
   CLICK_CELL,
   SET_TURN,
@@ -113,6 +120,28 @@ const Td = memo(({ rowIndex, cellIndex }) => {
     }
   });
 
+  return useMemo(
+    () => (
+      <td
+        style={getTdStyle(tableData[rowIndex][cellIndex])}
+        onClick={onClickTd}
+        onContextMenu={onRightClickTd}
+      >
+        {getTdText(tableData[rowIndex][cellIndex])}
+      </td>
+    ),
+    [tableData[rowIndex][cellIndex]]
+  );
+  return (
+    <RealTd
+      onClickTd={onClickTd}
+      onRightClickTd={onRightClickTd}
+      data={tableData[rowIndex][cellIndex]}
+    />
+  );
+});
+
+const RealTd = memo(({ onClickTd, onRightClickTd, data }) => {
   return (
     <td
       style={getTdStyle(tableData[rowIndex][cellIndex])}
@@ -123,5 +152,6 @@ const Td = memo(({ rowIndex, cellIndex }) => {
     </td>
   );
 });
+
 Td.displayName = "Td";
 export default Td;
