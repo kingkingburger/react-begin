@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import MineSearch from "./MineSearch";
+import Games from "./Games";
 
-ReactDOM.createRoot(document.querySelector("#root")).render(<MineSearch />);
+ReactDOM.createRoot(document.querySelector("#root")).render(<Games />);
