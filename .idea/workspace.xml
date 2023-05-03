@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: Satisfying win condition">
+    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: optimazaion context api">
+      <change afterPath="$PROJECT_DIR$/src/react-router/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/react-router/Form.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/react-router/MineSearch.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/react-router/Table.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/react-router/Td.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/react-router/Tr.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/react-router/client.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/react-router/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/react-router/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/react-router/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/react-router/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/8.지뢰찾기/MineSearch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.지뢰찾기/MineSearch.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/8.지뢰찾기/Td.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.지뢰찾기/Td.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +67,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "18.12.1",
     "javascript.nodejs.core.library.typings.version": "18.15.13",
-    "last_opened_file_path": "F:/react_practice",
+    "last_opened_file_path": "F:/react_practice/src/react-router",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,11 +81,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\react_practice\src\react-router" />
       <recent name="F:\react_practice\src\8.지뢰찾기" />
       <recent name="F:\react_practice\src\7.틱택토" />
       <recent name="F:\react_practice\src\6.로또" />
       <recent name="F:\react_practice\src\5.가위바위보" />
-      <recent name="F:\react_practice\src\4.반응속도체크" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -173,14 +182,8 @@
       <workItem from="1682807540086" duration="1041000" />
       <workItem from="1682919209280" duration="1775000" />
       <workItem from="1682921409241" duration="195000" />
-      <workItem from="1683025577494" duration="1104000" />
-    </task>
-    <task id="LOCAL-00004" summary="learn: create workRelay in class">
-      <created>1678448909162</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1678448909162</updated>
+      <workItem from="1683025577494" duration="1419000" />
+      <workItem from="1683110061359" duration="614000" />
     </task>
     <task id="LOCAL-00005" summary="learn: how to webpack hot reloading">
       <created>1678481880273</created>
@@ -518,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682920989081</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="learn: optimazaion context api">
+      <created>1683026743512</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1683026743512</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,7 +553,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="learn: use setInterval in componentDidMount for change image" />
     <MESSAGE value="learn: use setInterval and clearInterval" />
     <MESSAGE value="learn: what is Higher Order Function" />
     <MESSAGE value="learn: use setInterval in hooks" />
@@ -568,7 +577,8 @@
     <MESSAGE value="learn: know table Structure" />
     <MESSAGE value="learn: Recursively find blanks" />
     <MESSAGE value="learn: Satisfying win condition" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: Satisfying win condition" />
+    <MESSAGE value="learn: optimazaion context api" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: optimazaion context api" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
