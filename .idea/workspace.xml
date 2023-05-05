@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: using reactRoute from Link component">
+    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: using HashRouter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-router/Form.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-router/MineSearch.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-router/Table.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-router/Td.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-router/Tr.jsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +61,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.12.1&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.15.13&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/react_practice&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/nodeBird&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -175,21 +180,8 @@
       <workItem from="1683110061359" duration="718000" />
       <workItem from="1683152685197" duration="724000" />
       <workItem from="1683153906648" duration="36000" />
-      <workItem from="1683236001487" duration="597000" />
-    </task>
-    <task id="LOCAL-00007" summary="learn: uncontrolled input vs controlled input">
-      <created>1678707897529</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1678707897529</updated>
-    </task>
-    <task id="LOCAL-00008" summary="fix: Moving lessons to a new location">
-      <created>1678797780959</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1678797780959</updated>
+      <workItem from="1683236001487" duration="815000" />
+      <workItem from="1683327929492" duration="441000" />
     </task>
     <task id="LOCAL-00009" summary="fix: use map in react">
       <created>1678880685231</created>
@@ -520,7 +512,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683153930764</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="learn: using HashRouter">
+      <created>1683236750084</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1683236750084</updated>
+    </task>
+    <task id="LOCAL-00057" summary="learn: using HashRouter">
+      <created>1683236756221</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1683236756221</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -545,7 +551,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="learn: use setInterval in hooks" />
     <MESSAGE value="learn: A useEffect goes through a lifecycle based on its state" />
     <MESSAGE value="learn: Creating a custom hook" />
     <MESSAGE value="learn: why use memo: make pureComponent" />
@@ -570,7 +575,8 @@
     <MESSAGE value="learn: optimazaion context api" />
     <MESSAGE value="learn: first step react-router" />
     <MESSAGE value="learn: using reactRoute from Link component" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: using reactRoute from Link component" />
+    <MESSAGE value="learn: using HashRouter" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: using HashRouter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
