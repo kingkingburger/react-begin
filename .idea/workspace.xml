@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: using HashRouter">
+    <list default="true" id="55efd57d-ce52-4bd1-a967-0740b6c8a29a" name="Changes" comment="learn: make original gameMatcherClass">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/react-router/GameMacherClass.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/react-router/GameMacherClass.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-router/Games.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/react-router/Games.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,26 +50,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "18.12.1",
-    "javascript.nodejs.core.library.typings.version": "18.15.13",
-    "last_opened_file_path": "F:/react_practice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "F:\\react_practice\\src\\lecture\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.12.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.15.13&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/react_practice&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;F:\\react_practice\\src\\lecture\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\react_practice\src\react-router" />
@@ -178,14 +179,8 @@
       <workItem from="1683153906648" duration="36000" />
       <workItem from="1683236001487" duration="815000" />
       <workItem from="1683327929492" duration="441000" />
-      <workItem from="1683329621635" duration="109000" />
-    </task>
-    <task id="LOCAL-00010" summary="learn: use deep map in react">
-      <created>1678966705648</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1678966705648</updated>
+      <workItem from="1683329621635" duration="185000" />
+      <workItem from="1683408660110" duration="463000" />
     </task>
     <task id="LOCAL-00011" summary="learn: use props in react">
       <created>1679007790964</created>
@@ -523,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683329630368</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="learn: make original gameMatcherClass">
+      <created>1683329769728</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1683329769728</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,7 +550,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="learn: A useEffect goes through a lifecycle based on its state" />
     <MESSAGE value="learn: Creating a custom hook" />
     <MESSAGE value="learn: why use memo: make pureComponent" />
     <MESSAGE value="learn: use setTimeout in lottoClass component" />
@@ -573,7 +574,8 @@
     <MESSAGE value="learn: first step react-router" />
     <MESSAGE value="learn: using reactRoute from Link component" />
     <MESSAGE value="learn: using HashRouter" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: using HashRouter" />
+    <MESSAGE value="learn: make original gameMatcherClass" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: make original gameMatcherClass" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

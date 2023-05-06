@@ -10,7 +10,7 @@ import NumberBaseball from "../3.숫자야구/NumberBaseballClass";
 import RSP from "../5.가위바위보/RSPClass";
 import Lotto from "../6.로또/LottoClass";
 import GameMacherClass from "./GameMacherClass";
-const Games = () => {
+const Games = ({ match, location, history }) => {
   return (
     <HashRouter>
       <Link to="/game/number-baseball">숫자야구</Link>
