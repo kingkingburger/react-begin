@@ -20,9 +20,17 @@ const Games = ({ match, location, history }) => {
       <Link to="/game/lotto-generator">로또</Link>
       &nbsp;
       <Link to="/game/index">게임 매쳐</Link>
-      <Routes>
-        <Route path="/game/:name" element={<GameMacherClass />} />
-      </Routes>
+      {/*<Routes>*/}
+      {/*  /!*<Route path="/game/:name" element={<GameMacherClass />}  />*!/*/}
+      {/*  <Route path="/game/:name" element={<GameMacherClass />} />*/}
+      {/*</Routes>*/}
+      <div>
+        <Route
+          exact
+          path="/game/:name"
+          render={(props) => <GameMacherClass props={...props} />}
+        />
+      </div>
     </HashRouter>
   );
 };
